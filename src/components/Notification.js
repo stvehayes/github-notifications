@@ -1,15 +1,10 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import {
-    Avatar,
     Button,
     Box,
-    Text,
 } from "@primer/react"
-import Keyboard from "./Keyboard";
 import IssueHeader from "./IssueHeader";
-
-const spacing = 4;
 
 const Notification = (props) => {
     return (

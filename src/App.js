@@ -1,8 +1,7 @@
-import { createContext } from 'react'
 import {  BaseStyles, Box, ThemeProvider } from '@primer/react'
 import ColorModeSwitcher from './ColorModeSwitcher'
 import Notifications from './components/Notifications'
-import DialogMenu from './components/DialogMenu'
+// import DialogMenu from './components/DialogMenu'
 
 function App() {
     return (

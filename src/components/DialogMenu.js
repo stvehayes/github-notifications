@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { useRef, useState } from "react";
-import { Box, Button, Dialog, Text } from '@primer/react';
+import { Box, Button, Dialog } from '@primer/react';
 import Notifications from "./Notifications";
 import Keyboard from "./Keyboard";
 

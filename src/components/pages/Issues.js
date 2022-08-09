@@ -48,3 +48,5 @@ const Issues = (props) => {
         })
     )
 }
+
+export default Issues;

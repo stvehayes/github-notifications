@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion'
 import { Box, Text, StyledOcticon, Button } from '@primer/react'
 import Keyboard from './Keyboard'
-import keydown from 'react-keydown'
 
 const Command = (props) => {
     return(

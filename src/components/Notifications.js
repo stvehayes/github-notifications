@@ -1,5 +1,4 @@
 import {
-    useContext,
     useEffect,
     useState
 } from 'react'
@@ -11,7 +10,6 @@ import {
     Button,
     StyledOcticon,
     Text,
-    Textarea,
     TextInput,
 } from '@primer/react'
 import styled from 'styled-components'
@@ -102,7 +100,7 @@ const mentions = [
 
 const Notifications = (props) => {
     const [ page, setPage ] = useState("home");
-    const [ key, setKey ] = useState("");
+    const [ key, setKey ] = useState("N/A");
     const [ open, setOpen ] = useState(true);
 
     const handleKeyDown = (event) => {
@@ -143,11 +141,6 @@ const Notifications = (props) => {
     }, []);
 
     const spacing = 4;
-
-    const variants = {
-        open: { opacity: 1, x: 0 },
-        closed: { opacity: 0, x: "-75" },
-    }
 
     return(
         <>

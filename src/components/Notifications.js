@@ -31,19 +31,19 @@ const commands = [
     {
         name: "Notifications dashboard",
         icon: BellIcon,
-        command: "⌘N",
+        command: "N",
         value: "home"
     },
     {
         name: "Issues",
         icon: IssueOpenedIcon,
-        command: "⌘I",
+        command: "I",
         value: "issues"
     },
     {
         name: "Pull requests",
         icon: GitPullRequestIcon,
-        command: "⌘P",
+        command: "P",
         value: "prs"
     },
 ];
@@ -52,31 +52,31 @@ const issues = [
     {
         name: "Assigned",
         emoji: "🎯",
-        command: "⌘A",
+        command: "A",
         value: "issues"
     },
     {
         name: "Participating",
         emoji: "💬",
-        command: "⌘P",
+        command: "P",
         value: "issues"
     },
     {
         name: "Mentioned",
         emoji: "✋",
-        command: "⌘M",
+        command: "M",
         value: "issues"
     },
     {
         name: "Team mentioned",
         emoji: "🙌",
-        command: "⌘T",
+        command: "T",
         value: "issues"
     },
     {
         name: "Review requested",
         emoji: "👀",
-        command: "⌘R",
+        command: "R",
         value: "issues"
     },
 ];

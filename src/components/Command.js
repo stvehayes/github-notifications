@@ -49,22 +49,22 @@ const CommandButton = styled(Button)`
     position: relative;
     margin-left: 0.125rem;
 
-    &:focus-visible {
-        outline: none;
-        outline: none !important;
-        background: #f6f8fa;
+    // &:focus-visible {
+    //     outline: none;
+    //     outline: none !important;
+    //     background: #f6f8fa;
 
-        &:after {
-            content: "";
-            font-family: "SF Mono", "Roboto Mono", monospace;
-            height: 50%;
-            position: absolute;
-            left: -14px;
-            background: #24292F;
-            width: 4px;
-            top: 50%;
-            transform: translateY(-50%);
-            border-radius: 6px 0 0 6px;
-        }
-    }
+    //     &:after {
+    //         content: "";
+    //         font-family: "SF Mono", "Roboto Mono", monospace;
+    //         height: 50%;
+    //         position: absolute;
+    //         left: -14px;
+    //         background: #24292F;
+    //         width: 4px;
+    //         top: 50%;
+    //         transform: translateY(-50%);
+    //         border-radius: 6px 0 0 6px;
+    //     }
+    // }
 `;

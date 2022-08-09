@@ -110,7 +110,6 @@ const Notifications = (props) => {
         
         if(event.keyCode === 73) {
             setPage("issues");
-            
         };
 
         if(event.keyCode === 77) {
@@ -127,6 +126,10 @@ const Notifications = (props) => {
         };
 
         if(event.keyCode === 91) {
+            setOpen(true)
+        };
+
+        if(event.keyCode === 93) {
             setOpen(true)
         };
     };
@@ -178,13 +181,15 @@ const Notifications = (props) => {
                                         Issues
                                     </Text>
                                 </Breadcrumbs.Item>
-                                {page === "mentioned" &&
-                                    <Breadcrumbs.Item href="/" selected={page === "mentioned"}>
-                                        <Text color={page === "mentioned" ? "fg.default" : "fg.muted"}>{page === "issues" ? "" : "Mentioned"}</Text>
+
+                                {page !== "home" &&
+                                    <Breadcrumbs.Item href="/" selected={page === "issues" ? true : false}>
+                                        <Text color={page === "issues" || page === "mentioned" ? "fg.default" : "fg.muted"}>{page === "issues" ? "Home" : "Mentioned"}</Text>
                                     </Breadcrumbs.Item>
                                 }
+
                                 {page === "issue" &&
-                                    <Breadcrumbs.Item href="/" selected>
+                                    <Breadcrumbs.Item href="/" selected={page === "issue"}>
                                         <Text color={page === "issue" ? "fg.default" : "fg.muted"}>Add a new section to...</Text>
                                     </Breadcrumbs.Item>
                                 }   
@@ -282,13 +287,13 @@ const Notifications = (props) => {
                 ⌘
                 <Text display="block" fontSize="1rem" textAlign="center">to open</Text>
             </OpenText>
-            <Box position="absolute" bottom="1rem" left="1rem" display="flex">
+            <Box opacity="0.2" position="absolute" bottom="1rem" left="1rem" display="flex">
                 <Box mr="2rem">
                     <Text color="fg.muted">Key</Text>
                     <Text font as="h1">{key}</Text>
                 </Box>
 
-                <Box mr="2rem">
+                {/* <Box mr="2rem">
                     <Text color="fg.muted">Location</Text>
                     <Text as="h1">{page}</Text>
                 </Box>
@@ -296,7 +301,7 @@ const Notifications = (props) => {
                 <Box>
                     <Text color="fg.muted">Open</Text>
                     <Text as="h1">{open ? "true" : "false"}</Text>
-                </Box>
+                </Box> */}
             </Box>
         </>
     )

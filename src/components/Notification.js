@@ -49,8 +49,24 @@ const NotificationButton = styled(Button)`
     box-shadow: none;
     font-weight: normal;
     margin: 8px 0;
+    position: relative;
 
-    &:hover {
-        background-color: transparent !important;
+    &:focus {
+        outline: none;
+        outline: none !important;
+        background: #f6f8fa;
+        border-radius: 0 6px 6px 0;
+
+        &:after {
+            content: "";
+            height: calc(100% - 0px);
+            position: absolute;
+            left: -3px;
+            background: #24292F;
+            width: 3px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 2px 0 0 2px;
+        }
     }
 `;

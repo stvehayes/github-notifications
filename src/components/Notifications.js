@@ -188,7 +188,7 @@ const Notifications = (props) => {
                                     name={command.name}
                                     icon={command.icon}
                                     command={command.command}
-                                    onClick={() => setPage(command.value)}
+                                    onClick={() => setPage("issues")}
                                     delay={index * 0.1}
                                 />
                         )

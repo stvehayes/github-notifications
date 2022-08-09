@@ -24,6 +24,7 @@ import Command from './Command'
 import Notification from './Notification'
 import IssueHeader from './IssueHeader'
 import EmojiReact from './EmojiReact'
+import Keyboard from './Keyboard'
 
 const commands = [
     {
@@ -130,6 +131,10 @@ const Notifications = (props) => {
         if(event.keyCode === 93) {
             setOpen(true)
         };
+
+        if(event.keyCode === 72) {
+            setPage("home")
+        };
     };
 
     useEffect(() => {
@@ -152,12 +157,14 @@ const Notifications = (props) => {
                 transition={{ duration: 0.5 }}
             >
                 <Box height="max-content" m="3rem auto" width="100%" boxShadow="shadow.large" bg="canvas.default" border="1px solid" borderRadius={12} borderColor="border.muted" maxWidth={"500px"}>
-                    
-                    <Box display="flex" borderColor="border.muted" px={4} py={3}>
-                        <Box mr={3}>
-                            <MarkGithubIcon size={24} />
+                    <Box display="flex" justifyContent="space-between" alignItems="center" pr={spacing}>
+                        <Box display="flex" borderColor="border.muted" px={4} py={3}>
+                            <Box mr={3}>
+                                <MarkGithubIcon size={24} />
+                            </Box>
+                            <h4>Notifications</h4>
                         </Box>
-                        <h4>Notifications</h4>
+                        <Keyboard command="H" />
                     </Box>
 
                     <Box height="44px" p={spacing} display="flex" borderBottom="1px solid" borderTop="1px solid" borderColor="border.muted" alignItems="center" backgroundColor="canvas.inset" justifyItems="center" py={1}>
